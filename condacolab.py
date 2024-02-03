@@ -123,7 +123,7 @@ def install_from_url(
         cudatoolkit = "cuda-version 12.*"
     else:
         cudatoolkit = f"cudatoolkit {cuda_version}.*"
-    
+
     with open(condameta / "pinned", "a") as f:
         f.write(f"python {pymaj}.{pymin}.*\n")
         f.write(f"python_abi {pymaj}.{pymin}.* *cp{pymaj}{pymin}*\n")
@@ -157,7 +157,7 @@ def install_from_url(
     with open(sys.executable, "w") as f:
         f.write("#!/bin/bash\n")
         envstr = " ".join(f"{k}={v}" for k, v in env.items())
-        f.write(f"exec env {envstr} {sys.executable}.real -x $@\n")
+        f.write(f"exec env {envstr} /usr/local/bin/python -x $@\n")
     run(["chmod", "+x", sys.executable])
 
     taken = timedelta(seconds=round((datetime.now() - t0).total_seconds(), 0))
