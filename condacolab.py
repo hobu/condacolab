@@ -157,7 +157,7 @@ def install_from_url(
     with open(sys.executable, "w") as f:
         f.write("#!/bin/bash\n")
         envstr = " ".join(f"{k}={v}" for k, v in env.items())
-        f.write(f"exec env {envstr} /usr/local/bin/python -x $@\n")
+        f.write(f"exec env {envstr} {sys.executable}.real -x $@\n")
     run(["chmod", "+x", sys.executable])
 
     taken = timedelta(seconds=round((datetime.now() - t0).total_seconds(), 0))
