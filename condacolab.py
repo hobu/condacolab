@@ -29,11 +29,11 @@ except ImportError:
     raise RuntimeError("This module must ONLY run as part of a Colab notebook!")
 
 
-__version__ = "0.1.8"
+__version__ = "0.2.0"
 __author__ = "Jaime Rodríguez-Guerra <jaimergp@users.noreply.github.com>"
 
 
-PREFIX = "/usr/local"
+PREFIX = "/usr/local/condacolab"
 
 
 def _chunked_sha256(path, chunksize=1_048_576):
