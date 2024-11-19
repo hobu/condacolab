@@ -33,7 +33,7 @@ __version__ = "0.1.8"
 __author__ = "Jaime Rodríguez-Guerra <jaimergp@users.noreply.github.com>"
 
 
-PREFIX = "/usr/local"
+PREFIX = "/usr/local/condacolab"
 
 
 def _chunked_sha256(path, chunksize=1_048_576):
