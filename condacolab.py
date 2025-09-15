@@ -118,7 +118,7 @@ def install_from_url(
     condameta = prefix / "conda-meta"
     condameta.mkdir(parents=True, exist_ok=True)
     pymaj, pymin = sys.version_info[:2]
-    pymaj, pymin = 3, 10
+    pymaj, pymin = 3, 12
 
     if cuda_version.startswith("12"):
         cudatoolkit = "cuda-version 12.*"
