@@ -197,8 +197,8 @@ def install_mambaforge(
         Change to False to ignore checks and always attempt
         to run the installation.
     """
-    installer_url = "https://github.com/conda-forge/miniforge/releases/download/24.9.2-0/Mambaforge-24.9.2-0-Linux-x86_64.sh"
-    checksum = "9e122fbb925a96011b876fcf118d70c55cbe982b6ee001fe23aa8a2600d649d1"
+    installer_url = "https://github.com/conda-forge/miniforge/releases/download/25.3.1-0/Miniforge3-25.3.1-0-Linux-x86_64.sh"
+    checksum = "376b160ed8130820db0ab0f3826ac1fc85923647f75c1b8231166e3d559ab768"
     install_from_url(installer_url, prefix=prefix, env=env, run_checks=run_checks, sha256=checksum)
 
 
@@ -234,8 +234,8 @@ def install_miniforge(
         Change to False to ignore checks and always attempt
         to run the installation.
     """
-    installer_url = "https://github.com/conda-forge/miniforge/releases/download/24.9.2-0/Miniforge3-24.9.2-0-Linux-x86_64.sh"
-    checksum = "ca8c544254c40ae5192eb7db4e133ff4eb9f942a1fec737dba8205ac3f626322"
+    installer_url = "https://github.com/conda-forge/miniforge/releases/download/25.3.1-0/Miniforge3-25.3.1-0-Linux-x86_64.sh"
+    checksum = "376b160ed8130820db0ab0f3826ac1fc85923647f75c1b8231166e3d559ab768"
     install_from_url(installer_url, prefix=prefix, env=env, run_checks=run_checks, sha256=checksum)
 
 
